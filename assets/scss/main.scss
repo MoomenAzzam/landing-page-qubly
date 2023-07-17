@@ -1,0 +1,6 @@
+@use "./media-query/container.scss";
+@use "./variables/global-variable.scss" as *;
+@use "./media-query/media-query";
+* {
+    box-sizing: border-box;
+}

@@ -1,0 +1,108 @@
+body {
+    direction: rtl;
+}
+.fixed-nav {
+    top: 0;
+    left: auto;
+    right: 0;
+}
+nav .container .links li span .menu {
+    right: 0;
+    left: auto;
+}
+nav .container .links li span svg.active {
+    transform: rotate(90deg);
+}
+
+/* .first-section .container .slider {
+    direction: ltr;
+}
+.first-section .container .slider .slider-item {
+    direction: rtl;
+} */
+input[type="email"]::placeholder,
+.signup .container .right-side form .invalid-feedback,
+.signup .container .right-side form .radio-btn,
+.signup .container .left-side .title h1,
+.for-engineering-teams .container .left-side .title h1,
+.for-engineering-teams .container .left-side .paragraph p,
+.for-product-teams .container .right-side .title h1,
+.for-product-teams .container .right-side .paragraph p {
+    text-align: right;
+}
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: 9999px;
+}
+[type="checkbox"]:checked + label,
+[type="checkbox"]:not(:checked) + label {
+    padding-right: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    margin-top: 10px;
+}
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:before {
+    right: 0;
+}
+[type="checkbox"]:checked + label:after,
+[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: var(--primary-purple);
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.signup .container .right-side form .radio-btn {
+    text-align: right;
+}
+
+footer .container .newsletter input {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    position: relative;
+    filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.05));
+}
+footer .container .newsletter input:focus-visible {
+    outline: 1px solid #d6d6d6;
+}
+footer .container .newsletter div {
+    position: relative;
+}
+footer .container .newsletter div button {
+    position: absolute;
+    left: 12px;
+    right: auto;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    border: none;
+    background-color: inherit;
+    padding: 5px;
+    transition: var(--transition);
+    border-radius: 5px;
+}
+footer .container .newsletter div button:hover {
+    background-color: var(--primary-purple);
+}
+footer .container .newsletter div button svg {
+    margin-top: 3px;
+}
+footer .container .newsletter div button svg path {
+    transition: var(--transition);
+}
+footer .container .newsletter div button:hover svg path {
+    fill: var(--white);
+    background-color: #722ed1;
+}
